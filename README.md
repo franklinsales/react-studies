@@ -9,14 +9,14 @@ The structure folders will be as follow:
  
  ``` bash
 |-- Source Name (name of a course, title of a tutorial, or just test)
-|    |-- Project Folder (the project)
+|   |-- Project Folder (the project)
 ```
 Ex.:  
 
 ``` bash
 |-- udemy-rect-complete
-|    |-- todo-with-nodejs
+|   |-- todo-with-nodejs
 ```
 ## More
 
-All source directories and project directories will be your own README.md files
+All sources directories and projects directories will have your own README.md files
