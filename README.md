@@ -5,7 +5,7 @@ This repository is just to me put React project's that I built during courses, t
 
 ## Structure Folders
 
-The structure folders will be as follow:
+The directory structure will be as follow:
  
  ``` bash
 |-- Source Name (name of a course, title of a tutorial, or just test)
