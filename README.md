@@ -1,6 +1,6 @@
 # React Studies
 
-This repository is just to me to put React project's that I built during courses, tutorials and tests that I made.
+This repository is just to me to put React projects that I built during courses, tutorials and tests that I made.
 
 
 ## Structure Folders
