@@ -1,3 +1,3 @@
 # Burger Project
 
-More details about soon
+More details coming soon
