@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/showcases/react/burger-project/static/css/main.7a924d9c.chunk.css",
-    "main.js": "/showcases/react/burger-project/static/js/main.390b6974.chunk.js",
-    "main.js.map": "/showcases/react/burger-project/static/js/main.390b6974.chunk.js.map",
+    "main.css": "/showcases/react/burger-project/static/css/main.9804738f.chunk.css",
+    "main.js": "/showcases/react/burger-project/static/js/main.d086195e.chunk.js",
+    "main.js.map": "/showcases/react/burger-project/static/js/main.d086195e.chunk.js.map",
     "runtime-main.js": "/showcases/react/burger-project/static/js/runtime-main.ef218aad.js",
     "runtime-main.js.map": "/showcases/react/burger-project/static/js/runtime-main.ef218aad.js.map",
-    "static/js/2.2060bee0.chunk.js": "/showcases/react/burger-project/static/js/2.2060bee0.chunk.js",
-    "static/js/2.2060bee0.chunk.js.map": "/showcases/react/burger-project/static/js/2.2060bee0.chunk.js.map",
+    "static/js/2.76e20301.chunk.js": "/showcases/react/burger-project/static/js/2.76e20301.chunk.js",
+    "static/js/2.76e20301.chunk.js.map": "/showcases/react/burger-project/static/js/2.76e20301.chunk.js.map",
     "index.html": "/showcases/react/burger-project/index.html",
-    "precache-manifest.071c2e75eb7b10d06eafc8ad861adac7.js": "/showcases/react/burger-project/precache-manifest.071c2e75eb7b10d06eafc8ad861adac7.js",
+    "precache-manifest.b87638b7caadf0b275afd372a014284d.js": "/showcases/react/burger-project/precache-manifest.b87638b7caadf0b275afd372a014284d.js",
     "service-worker.js": "/showcases/react/burger-project/service-worker.js",
-    "static/css/main.7a924d9c.chunk.css.map": "/showcases/react/burger-project/static/css/main.7a924d9c.chunk.css.map",
-    "static/js/2.2060bee0.chunk.js.LICENSE.txt": "/showcases/react/burger-project/static/js/2.2060bee0.chunk.js.LICENSE.txt",
+    "static/css/main.9804738f.chunk.css.map": "/showcases/react/burger-project/static/css/main.9804738f.chunk.css.map",
+    "static/js/2.76e20301.chunk.js.LICENSE.txt": "/showcases/react/burger-project/static/js/2.76e20301.chunk.js.LICENSE.txt",
     "static/media/burger-logo.png": "/showcases/react/burger-project/static/media/burger-logo.b8503d26.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ef218aad.js",
-    "static/js/2.2060bee0.chunk.js",
-    "static/css/main.7a924d9c.chunk.css",
-    "static/js/main.390b6974.chunk.js"
+    "static/js/2.76e20301.chunk.js",
+    "static/css/main.9804738f.chunk.css",
+    "static/js/main.d086195e.chunk.js"
   ]
 }

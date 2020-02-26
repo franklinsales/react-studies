@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73ae030eba8759d3ec7897448e09da10",
+    "revision": "74ed052217cc636e148d97f53bf2811f",
     "url": "/showcases/react/burger-project/index.html"
   },
   {
-    "revision": "fd9f2f028b7cb0946d1e",
-    "url": "/showcases/react/burger-project/static/css/main.7a924d9c.chunk.css"
+    "revision": "687fe2b9d73768c0892c",
+    "url": "/showcases/react/burger-project/static/css/main.9804738f.chunk.css"
   },
   {
-    "revision": "c38d640fc4849175de5a",
-    "url": "/showcases/react/burger-project/static/js/2.2060bee0.chunk.js"
+    "revision": "a2de11edae64d4ce85f7",
+    "url": "/showcases/react/burger-project/static/js/2.76e20301.chunk.js"
   },
   {
     "revision": "99bd0487192ec9e7d9ee8fbbd91ee444",
-    "url": "/showcases/react/burger-project/static/js/2.2060bee0.chunk.js.LICENSE.txt"
+    "url": "/showcases/react/burger-project/static/js/2.76e20301.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fd9f2f028b7cb0946d1e",
-    "url": "/showcases/react/burger-project/static/js/main.390b6974.chunk.js"
+    "revision": "687fe2b9d73768c0892c",
+    "url": "/showcases/react/burger-project/static/js/main.d086195e.chunk.js"
   },
   {
     "revision": "751d84af42d33e6fa0a1",
