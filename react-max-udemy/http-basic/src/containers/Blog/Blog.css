@@ -12,11 +12,12 @@
 }
 
 .Blog a{
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
 }
 
 .Blog a:hover,
-.Blog a:active{
+.Blog a:active,
+.Blog a.active{
     color: brown;
 }
