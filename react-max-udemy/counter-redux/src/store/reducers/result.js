@@ -1,4 +1,4 @@
-import * as actionTypes from '../actions/actions'
+import * as actionTypes from '../actions/actionsTypes'
 
 const initialState = {
     results: []
@@ -15,6 +15,7 @@ const reducer = (state = initialState, action) => {
             }
 
         case actionTypes.DELETE_RESULT:
+            // alternative:
             // const id = 2
             // const newArray = [...state.results]
             // newArray.splice(id, 1)
