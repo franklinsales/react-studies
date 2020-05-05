@@ -64,8 +64,9 @@ export const fetchOrdersStart = () => {
 }
 
 export const fetchOrders = () => {
-   return dispatch => {
-       dispatch(fetchOrdersStart())
+    let mounted = true;
+    return dispatch => {
+        dispatch(fetchOrdersStart())
         axios.get('/orders.json')
         .then(res => {
             const fetchedOders = []
@@ -80,5 +81,5 @@ export const fetchOrders = () => {
         .catch(err => {
             dispatch(fetchOrdersFail(err))
         })
-   }
+    }
 }
