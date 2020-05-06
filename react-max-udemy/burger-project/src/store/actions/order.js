@@ -64,7 +64,6 @@ export const fetchOrdersStart = () => {
 }
 
 export const fetchOrders = () => {
-    let mounted = true;
     return dispatch => {
         dispatch(fetchOrdersStart())
         axios.get('/orders.json')
