@@ -3,10 +3,12 @@ import React, { useState, useEffect, useCallback } from 'react';
 import IngredientForm from './IngredientForm';
 import IngredientsList from './IngredientList'
 import Search from './Search';
+import ErrorModal from '../UI/ErrorModal';
 
 const Ingredients = () => {
   const [ userIngredients, setUserIngredients ] = useState([]);
   const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState()
 
   /* We already get list of ingredients em Search component, so we don't need no more this useEffect() hook here*/
   // useEffect(() => {
@@ -59,11 +61,21 @@ const Ingredients = () => {
       setUserIngredients(prevIngredients =>
         prevIngredients.filter(ingredient => ingredient.id !== ingredientId)
       );
-    })   
+    }).catch(error => {
+      setError(error.message)
+    }) 
   };
+
+  const clearError = () => {
+    setError(null)
+    setIsLoading(false)
+  }
 
   return (
     <div className="App">
+
+      {error && <ErrorModal onClose={clearError}>{error}</ErrorModal> }
+
       <IngredientForm
         onAddIngredient={addIngredientHandler}
         loading={isLoading}
