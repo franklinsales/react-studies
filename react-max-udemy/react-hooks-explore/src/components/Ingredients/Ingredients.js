@@ -6,6 +6,7 @@ import Search from './Search';
 
 const Ingredients = () => {
   const [ userIngredients, setUserIngredients ] = useState([]);
+  const [isLoading, setIsLoading] = useState(false)
 
   /* We already get list of ingredients em Search component, so we don't need no more this useEffect() hook here*/
   // useEffect(() => {
@@ -33,11 +34,13 @@ const Ingredients = () => {
   }, [])
 
   const addIngredientHandler = ingredient => {
+    setIsLoading(true)
     fetch(process.env.REACT_APP_FIREBASE_URL+'/ingredients.json', {
       method: 'POST',
       body: JSON.stringify(ingredient),
       headers: { 'Content-Type': 'application/json' }
     }).then(response => {
+      setIsLoading(false)
       return response.json()      
     }).then( responseData => {
       setUserIngredients(prevIngredients => [
@@ -48,14 +51,23 @@ const Ingredients = () => {
   }
 
   const removeIngredientHandler = ingredientId => {
-    setUserIngredients(prevIngredients =>
-      prevIngredients.filter(ingredient => ingredient.id !== ingredientId)
-    );
+    setIsLoading(true)
+    fetch(`${process.env.REACT_APP_FIREBASE_URL}/ingredients/${ingredientId}.json`, {
+      method: 'DELETE',
+    }).then(response => {
+      setIsLoading(false)
+      setUserIngredients(prevIngredients =>
+        prevIngredients.filter(ingredient => ingredient.id !== ingredientId)
+      );
+    })   
   };
 
   return (
     <div className="App">
-      <IngredientForm onLoadIngredients={addIngredientHandler}/>
+      <IngredientForm
+        onAddIngredient={addIngredientHandler}
+        loading={isLoading}
+      />
 
       <section>
         <Search onLoadIngredients={filterIngredientsHandler}/>
