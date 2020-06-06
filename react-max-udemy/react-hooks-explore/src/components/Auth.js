@@ -15,7 +15,7 @@ const Auth = props => {
     <div className="auth">
       <Card>
         <h2>You are not authenticated!</h2>
-        <p>Please log in to continue.</p>
+        <p>Please click in "Log In" to continue.</p>
         <button onClick={loginHandler}>Log In</button>
       </Card>
     </div>
