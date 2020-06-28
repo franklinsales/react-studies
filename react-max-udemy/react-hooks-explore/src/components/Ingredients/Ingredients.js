@@ -24,7 +24,7 @@ const ingredientReducer = (currentIngredients, action) => {
 
 const Ingredients = () => {
   const [userIngredients, dispatch] = useReducer(ingredientReducer, [])
-  const { isLoading, error, data, sendRequest, reqExtra, reqIdentifier }= useHttp();
+  const { isLoading, error, data, sendRequest, reqExtra, reqIdentifier, clear }= useHttp();
   //const [ userIngredients, setUserIngredients ] = useState([]);
   // const [isLoading, setIsLoading] = useState(false)
   // const [error, setError] = useState()
@@ -82,7 +82,7 @@ const Ingredients = () => {
     //   // ])
     //   dispatch({type: 'ADD', ingredient: { id: responseData.name, ...ingredient} })
     // })
-  }, [])
+  }, [sendRequest])
 
   const removeIngredientHandler = useCallback(ingredientId => {
     sendRequest(`${process.env.REACT_APP_FIREBASE_URL}/ingredients/${ingredientId}.json`,
@@ -92,10 +92,6 @@ const Ingredients = () => {
       'REMOVE_INGREDIENT'
     )
   }, [sendRequest]);
-
-  const clearError = useCallback(() => {
-    dispatch({type: 'CLEAR'})
-  }, [])
 
   const ingredientList = useMemo(() => {
     return (
@@ -110,7 +106,7 @@ const Ingredients = () => {
   return (
     <div className="App">
 
-      {error && <ErrorModal onClose={clearError}>{error}</ErrorModal> }
+      {error && <ErrorModal onClose={clear}>{error}</ErrorModal> }
 
       <IngredientForm
         onAddIngredient={addIngredientHandler}
